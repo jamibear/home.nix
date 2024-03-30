@@ -2,11 +2,12 @@
 
 {
 	fonts.fontconfig = {
-		enable = true;
-	};
+        enable = true;
+    };
 
 
 	home.packages = [
+        pkgs.google-fonts
 		(pkgs.nerdfonts.override {
 			fonts = [
 				"FiraCode" 

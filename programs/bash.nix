@@ -32,6 +32,7 @@ in
 		enableCompletion = true;
 
 		shellAliases = {
+            nvim = "nix run github:juweeism/neovim.nix";
 		};
 
 		bashrcExtra = ''

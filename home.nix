@@ -49,6 +49,7 @@
 
     obsidian
 
+
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -97,13 +98,9 @@
     EDITOR = "nvim";
   };
 
-
-
   programs.neovim = {
-	enable = true;
-        defaultEditor = true;
+    enable = true;
   };
-
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

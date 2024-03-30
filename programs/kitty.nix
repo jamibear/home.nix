@@ -4,6 +4,7 @@
 	programs.kitty = {
 		enable = true;
 		theme = "N0tch2k";
+        font.name = "JetBrains Mono Nerd Font";
 
 		# https://sw.kovidgoyal.net/kitty/conf/
 		extraConfig = ''

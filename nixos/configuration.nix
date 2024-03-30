@@ -75,6 +75,9 @@ users.extraUsers.minx.extraGroups = [ "audio" ];
     layout = "ph";
     xkbVariant = "";
   };
+  services.sshd = {
+    enable = true;
+  };
   
   location.provider = "manual";
   location.longitude = 14.39;
@@ -110,6 +113,7 @@ users.extraUsers.minx.extraGroups = [ "audio" ];
     chromium
     pavucontrol 
     telegram-desktop
+    steam-run
   ];
 
   programs.hyprland.enable = true;
@@ -117,9 +121,31 @@ users.extraUsers.minx.extraGroups = [ "audio" ];
     enable = false;
 
     libraries = [
-        stdenv.cc.cc
-        glibc
-        chromium
+        stdenv.cc.cc.lib
+
+        xorg.libXcomposite
+        xorg.libXtst
+        xorg.libXrandr
+        xorg.libXext
+        xorg.libX11
+        xorg.libXfixes
+        libGL
+        libva
+
+        # from https://github.com/NixOS/nixpkgs/blob/nixos-23.05/pkgs/games/steam/fhsenv.nix#L124-L136
+        fontconfig
+        freetype
+        xorg.libXt
+        xorg.libXmu
+        libogg
+        libvorbis
+        SDL
+        SDL2_image
+        glew110
+        libdrm
+        libidn
+        tbb
+        zlib    
     ];
   };
 

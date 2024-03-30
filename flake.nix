@@ -31,13 +31,13 @@
       
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs username system; };
-	modules = [ ./nixos/configuration.nix ];
+	    modules = [ ./nixos/configuration.nix ];
       };
 
       homeConfigurations."${username}" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
-	extraSpecialArgs = { inherit inputs; };
+    	extraSpecialArgs = { inherit inputs; };
 
         modules = [ 
 	    ./home.nix 
