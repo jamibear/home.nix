@@ -145,6 +145,7 @@
 		bind = $mainMod, SPACE, exec, ags -t applauncher
 		bind = $mainMod, B, exec, $browser
 		bind = $mainMod, C, killactive,
+		bind = $mainMod, O, exec, obsidian
 		bind = $mainMod, Q, exit,
 		bind = $mainMod, E, exec, $fileManager
 		bind = $mainMod, V, togglefloating,
