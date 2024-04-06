@@ -117,6 +117,7 @@ users.extraUsers.minx.extraGroups = [ "audio" ];
   ];
 
   programs.hyprland.enable = true;
+  programs.thunar.enable = true;
   programs.nix-ld = with pkgs; {
     enable = false;
 

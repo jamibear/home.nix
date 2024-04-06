@@ -20,7 +20,7 @@
 		$terminal = kitty
 		$browser = chromium
 
-		# $fileManager = dolphin
+		$fileManager = thunar
 		# $menu = wofi --show drun
 
 		# Some default env vars.
