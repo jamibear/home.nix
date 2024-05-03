@@ -71,6 +71,7 @@ users.extraUsers.minx.extraGroups = [ "audio" ];
   };
 
   # Configure keymap in X11
+  services.teamviewer.enable = true;
   services.xserver = {
     layout = "ph";
     xkbVariant = "";

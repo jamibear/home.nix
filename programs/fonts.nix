@@ -15,5 +15,6 @@
 				"JetBrainsMono"
 			];
 		})
+        pkgs.tt2020
 	];
 }
